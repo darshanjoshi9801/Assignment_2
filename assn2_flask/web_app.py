@@ -15,6 +15,7 @@ def success():
     if request.method == 'POST':
         file = request.files['zipfile']
         with ZipFile(file ,'r') as zip_file:
+            zip_file.printdir()
             zip_file.extractall()
     return "zip file extracted successfully"
 
