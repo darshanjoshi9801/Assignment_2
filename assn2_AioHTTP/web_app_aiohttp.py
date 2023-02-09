@@ -1,7 +1,8 @@
 import zipfile
 from aiohttp import web
-async def index():
 
+
+async def index():
     return web.Response(text=
     """
     <!DOCTYPE html>
