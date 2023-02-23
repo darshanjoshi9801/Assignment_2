@@ -1,0 +1,13 @@
+<html>
+    <head>
+        <title>File Downloader</title>
+    </head>
+    <body>
+    <h3>Click to download your file</h3>
+    <ul>
+        {% for file in file_names %}
+        <li><a href='download/{{file}}' download>{{file}}</a></li>
+        {% endfor %}
+    </ul>
+    </body>
+</html>
